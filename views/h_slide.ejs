@@ -1,0 +1,26 @@
+<img class="mySlides" src="/images/h1.jpg" height="" width="100%" >
+<img class="mySlides" src="/images/h2.jpg" height="" width="100%" >
+<img class="mySlides" src="/images/h3.jpg" height="" width="100%" >
+<img class="mySlides" src="/images/h4.jpg" height="" width="100%" >
+<img class="mySlides" src="/images/h5.jpg" height="" width="100%" >
+<img class="mySlides" src="/images/h6.jpg" height="" width="100%" >
+<img class="mySlides" src="/images/h7.jpg" height="" width="100%" >
+
+
+<script>
+var a=0;
+showdisp();
+
+function showdisp(){
+    var x=document.getElementsByClassName("mySlides");
+    for(i=0;i<x.length;i++){
+        x[i].style.display="none";
+    }
+    a++;
+    if(a>x.length){
+        a=1;
+    }
+    x[a-1].style.display="block";
+    setTimeout(showdisp,2000);
+}
+</script>
